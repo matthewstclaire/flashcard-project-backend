@@ -1,0 +1,13 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  addition: MyString
+  subtraction: MyString
+  multiplication: MyString
+  division: MyString
+
+two:
+  addition: MyString
+  subtraction: MyString
+  multiplication: MyString
+  division: MyString
