@@ -45,3 +45,23 @@ Question.create(body: "10-2",
 answer: "8",
 category_id: 2,
 question_id: 2)
+
+Question.create(body: "1 x 2",
+answer: "2",
+category_id: 3,
+question_id: 1)
+
+Question.create(body: "1 x 3",
+answer: "3",
+category_id: 3,
+question_id: 2)
+
+Question.create(body: "10 % 2",
+answer: "5",
+category_id: 4,
+question_id: 1)
+
+Question.create(body: "10 % 5",
+answer: "2",
+category_id: 4,
+question_id: 2)
