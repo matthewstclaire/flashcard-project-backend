@@ -5,12 +5,12 @@ class CategoriesController < ApplicationController
   def index
     @categories = Category.all
 
-    render json: @categories
+    render json: @categories.to_json(:include => :questions)
   end
 
   # GET /categories/1
   def show
-    render json: @category
+    render json: @category.to_json(include: {questions: {only:[:id, :body, :answer]}})
   end
 
   # POST /categories
@@ -46,6 +46,7 @@ class CategoriesController < ApplicationController
 
     # Only allow a trusted parameter "white list" through.
     def category_params
-      params.require(:category).permit(:addition, :subtraction, :multiplication, :division)
+      params.require(:category).permit(:topic, questions_attributes:[:body, :answer])
     end
+
 end

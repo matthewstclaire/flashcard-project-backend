@@ -24,7 +24,6 @@ ActiveRecord::Schema.define(version: 2020_12_08_163049) do
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.integer "category_id"
-    t.integer "question_id"
   end
 
 end
