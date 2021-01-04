@@ -46,6 +46,6 @@ class QuestionsController < ApplicationController
 
     # Only allow a trusted parameter "white list" through.
     def question_params
-      params.require(:question).permit(:body, :answer)
+      params.require(:question).permit(:category_id, :body, :answer)
     end
 end
