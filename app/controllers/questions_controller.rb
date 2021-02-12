@@ -16,7 +16,7 @@ class QuestionsController < ApplicationController
   # POST /questions
   def create
     @question = Question.new(question_params)
-
+    @question.category_id = params[:category_id].to_i
     if @question.save
       render json: @question, status: :created, location: @question
     else
@@ -36,12 +36,13 @@ class QuestionsController < ApplicationController
   # DELETE /questions/1
   def destroy
     @question.destroy
+    render json:{message: 'successfully deleted'}
   end
 
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_question
-      @question = Question.find(params[:id])
+      @question = Question.find_by(id:params[:id])
     end
 
     # Only allow a trusted parameter "white list" through.

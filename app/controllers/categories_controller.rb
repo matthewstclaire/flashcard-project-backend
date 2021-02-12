@@ -16,11 +16,10 @@ class CategoriesController < ApplicationController
   # POST /categories
   def create
     @category = Category.new(category_params)
-
     if @category.save
       render json: @category, status: :created, location: @category
     else
-      render json: @category.errors, status: :unprocessable_entity
+      render json: @category.errors, status: :it_not_working_chief
     end
   end
 
@@ -29,7 +28,7 @@ class CategoriesController < ApplicationController
     if @category.update(category_params)
       render json: @category
     else
-      render json: @category.errors, status: :unprocessable_entity
+      render json: @category.errors, status: :still_not_working
     end
   end
 
