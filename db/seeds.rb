@@ -34,6 +34,22 @@ Question.create(body: "10-2",
 answer: "8",
 category_id: 2)
 
+Question.create(body: "143-43",
+answer: "100",
+category_id: 2)
+    
+Question.create(body: "53-18",
+answer: "35",
+category_id: 2)
+
+Question.create(body: "43-12",
+answer: "31",
+category_id: 2)
+        
+Question.create(body: "46-32",
+answer: "14",
+category_id: 2)
+
 Question.create(body: "1 x 2",
 answer: "2",
 category_id: 3)
@@ -42,10 +58,38 @@ Question.create(body: "1 x 3",
 answer: "3",
 category_id: 3)
 
+Question.create(body: "5 x 5",
+answer: "25",
+category_id: 3)
+
+Question.create(body: "4 x 8",
+answer: "24",
+category_id: 3)
+
+Question.create(body: "6 x 7",
+answer: "42",
+category_id: 3)
+
 Question.create(body: "10 % 2",
 answer: "5",
 category_id: 4)
 
 Question.create(body: "10 % 5",
 answer: "2",
+category_id: 4)
+
+Question.create(body: "40 % 10",
+answer: "4",
+category_id: 4)
+
+Question.create(body: "32 % 8",
+answer: "4",
+category_id: 4)
+
+Question.create(body: "81 % 9",
+answer: "9",
+category_id: 4)
+
+Question.create(body: "55 % 11",
+answer: "5",
 category_id: 4)

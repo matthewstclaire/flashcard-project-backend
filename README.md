@@ -1,24 +1,9 @@
-# README
+# Chalkboard Math Backend
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Important Install Instructions
 
-Things you may want to cover:
+**This repo is directly tied to the frontend which can be found here: https://github.com/matthewstclaire/flashcard-project-frontend.** This Rails built API will allow you to save all questions made in the Chalkboard Math app. In order to start the server simply run 'rails server' in your terminal.
 
-* Ruby version
+## License
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+This database is available as open source under the terms of the MIT License.
